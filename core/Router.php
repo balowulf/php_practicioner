@@ -4,6 +4,13 @@ class Router
 {
     protected $routes = [];
 
+    public static function load($file)
+    {
+        $router = new self;
+        require $file;
+        return $router;
+    }
+
     public function define(array $routes)
     {
         $this->routes = $routes;
