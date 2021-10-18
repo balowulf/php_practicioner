@@ -1,6 +1,6 @@
 <?php
 
-$query = require 'core/bootstrap.php';
+$query = new QueryBuilder(Connection::makePostgres($config['postgres']));
 
 $tasks = $query->getAll('todos', 'task');
 

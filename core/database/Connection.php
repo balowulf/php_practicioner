@@ -2,7 +2,7 @@
 
 class Connection
 {
-    public static function makePostgres(array $config)
+    public static function makePostgres(array $config) : PDO
     {
         try {
             return new PDO(
@@ -13,7 +13,7 @@ class Connection
         }
     }
 
-    public static function makeMysql(array $config)
+    public static function makeMysql(array $config) : PDO
     {
         try {
             return new PDO(

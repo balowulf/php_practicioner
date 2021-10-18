@@ -1,5 +1,5 @@
 <?php require('partials/head.view.php'); ?>
-  <header>
+  <!-- <header>
     <h1>My Tasks</h1>
     <ul>
       <?php foreach ($tasks as $task) : ?>
@@ -12,5 +12,11 @@
         </li>
       <?php endforeach; ?>
     </ul>
-  </header>
+  </header> -->
+
+<h1>Submit Your Name</h1>
+<form method="POST" action="/names">
+  <input name="name"></input>
+  <button type="submit">Submit</button>
+</form>
 <?php require('partials/footer.view.php'); ?>
