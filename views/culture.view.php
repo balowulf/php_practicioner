@@ -1,3 +1,3 @@
 <?php require('partials/head.view.php'); ?>
-  <h1>About Us</h1>
+  <h1>Our Culture</h1>
 <?php require('partials/footer.view.php'); ?>
